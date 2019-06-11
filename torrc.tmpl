@@ -1,0 +1,14 @@
+%include TORRC_COMMON
+%include TORRC_COMMON_TYPE
+
+DataDirectory DATADIR
+PidFile DATADIR/tor.pid
+Log notice file DATADIR/notice.log
+ControlSocket DATADIR/control
+Address IP
+OutboundBindAddress IP
+ORPort ORPORT
+DirPort DIRPORT
+Nickname NICK
+
+%include TORRC_MISC_SPECIFIC
