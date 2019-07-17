@@ -1,2 +1,14 @@
 ExitRelay 1
-ReducedExitPolicy 1
+#ReducedExitPolicy 1
+ExitPolicy accept *:22
+ExitPolicy accept *:53
+ExitPolicy accept *:80
+ExitPolicy accept *:443
+ExitPolicy accept *:8232  # zcash
+ExitPolicy accept *:8233  # zcash
+ExitPolicy accept *:8332  # bitcoin
+ExitPolicy accept *:8333  # bitcoin
+ExitPolicy accept *:18080 # monero
+ExitPolicy accept *:18081 # monero
+ExitPolicy accept *:30303 # ethereum
+ExitPolicy reject *:*
